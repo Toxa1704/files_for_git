@@ -1,0 +1,17 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e3d6c8;
+    color: #76420c;
+    font-size: 120%;
+}
+#container {
+    margin-left: 150px;
+}
+.elcontainer, .eltext, .ellist-item, .elitem, .teg-p, .elbody, .ellink {
+    font-weight: 700;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
