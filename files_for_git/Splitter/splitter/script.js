@@ -17,32 +17,44 @@ resetBtn.addEventListener(('click'), () => {
 })
 
 document.getElementById('five-percent').addEventListener('click', ()=>{
+    document.getElementById('selecttip-btn').style.display = 'block'
+    custom.style.display= 'none'
     sum()
 })
 document.getElementById('ten-percent').addEventListener('click', ()=>{
+    document.getElementById('selecttip-btn').style.display = 'block'
+    custom.style.display= 'none'
     sum()
 })
 document.getElementById('fifteen-percent').addEventListener('click', ()=>{
+    document.getElementById('selecttip-btn').style.display = 'block'
+    custom.style.display= 'none'
     sum()
 })
 document.getElementById('twenty-percent').addEventListener('click', ()=>{
+    document.getElementById('selecttip-btn').style.display = 'block'
+    custom.style.display= 'none'
     sum()
 })
 document.getElementById('twenty-five-percent').addEventListener('click', ()=>{
+    document.getElementById('selecttip-btn').style.display = 'block'
+    custom.style.display= 'none'
     sum()
 })
 
 billNumber.addEventListener('input', () => {
     if(Number(billNumber.value) <= 0){
         billNumber.value = "10"
-    }
+    }else{
     sum()
+    }
 })
 peopleNumber.addEventListener('input', () => {
     if(Number(peopleNumber.value) < 1){
         peopleNumber.value = "1"
+    }else{
+        sum()
     }
-    sum()
 })
 
 
