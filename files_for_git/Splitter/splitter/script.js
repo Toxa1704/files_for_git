@@ -42,14 +42,14 @@ document.getElementById('twenty-five-percent').addEventListener('click', ()=>{
     sum()
 })
 
-billNumber.addEventListener('input', () => {
+billNumber.addEventListener('blur', () => {
     if(Number(billNumber.value) <= 0){
         billNumber.value = "10"
     }else{
     sum()
     }
 })
-peopleNumber.addEventListener('input', () => {
+peopleNumber.addEventListener('blur', () => {
     if(Number(peopleNumber.value) < 1){
         peopleNumber.value = "1"
     }else{
@@ -75,7 +75,7 @@ const sum = () => {
 document.getElementById('selecttip-btn').addEventListener('click', ()=>{
     document.getElementById('selecttip-btn').style.display = 'none'
     custom.style.display= 'block'
-    custom.addEventListener('input', () =>{
+    custom.addEventListener('blur', () =>{
     const orBillNumber = Number(billNumber.value)
     const origPeopleNumber = Number(peopleNumber.value)
     let tipPersentage = Number(custom.value)
